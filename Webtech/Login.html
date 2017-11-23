@@ -1,0 +1,142 @@
+<DOCTYPE !html>
+    <head>
+        <title>Login to WanderLust</title>
+        <style>
+            .table{
+                position: fixed;
+                background-color: rgba(0,0,0,0.5);
+                font-family: cursive;
+                font-size: 2em;
+                z-index: 1;
+                width: 100%;
+                margin-left: -8px;
+                margin-top: -10px;
+            }
+            .dropdown{
+                position: relative;
+                text-align: center;
+                color: whitesmoke;
+                font-family: cursive;
+                font-size: 1em;
+            }
+            .dropcontent{
+                display: none;
+                position:absolute;
+                text-align: center;
+                color: whitesmoke;
+                background-color: rgba(0,0,0,0.5);
+                font-family: cursive;
+                font-size: 1em;
+                width: 100%;
+            }
+            #button{
+                text-align: center;
+                color: whitesmoke;
+                background-color: transparent;
+                padding-bottom: 0px;
+                border-style: none;
+                font-family: cursive;
+                font-size: 1em;
+                width: 100%;
+            }
+            a{
+                color: whitesmoke;
+                text-decoration-line: none;
+            }
+            a:hover{
+                color: gainsboro;
+            }
+            button:hover{
+                color: gainsboro;
+            }
+            .dropdown:hover{
+                color: gainsboro;
+            }
+            .dropdown:hover .dropcontent{
+                display: block;
+                color: gainsboro;
+            }
+            #name{
+                font-family: fantasy;
+                color: burlywood;
+                font-size: 3.5em;
+                position: relative;
+                top:60px;
+            }
+            body{
+                /*font-size: 2.5em;*/
+                background-image: url(login.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .button:hover{
+                color: black;
+                box-shadow: 2px 2px 2px 2px;
+            }
+            input::-webkit-input-placeholder{
+                color:black!important;
+                opacity: 0.9;
+            }
+            form{
+                padding: 50px;
+                background-color: rgba(0,0,0,0.5);
+                border-radius: 15px;
+                position: fixed;
+                right: 30%;
+                top: 20%;
+            }
+            .footer{
+                background-color: rgba(0,0,0,0.5);
+                position: absolute;
+                bottom: 0px;
+                font-size: 1em;
+                left: 0px;
+                width: 100%;
+            }
+            input{
+                opacity: 0.6;
+                border-radius: 10px;
+                font-size: 2em;
+                outline: none;
+            }
+            .button{
+                background-color: azure;
+                border-style: hidden;
+                border-radius: 10px;
+                font-size: 2em;
+                shape-margin: round;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="table" cellspacing="0" cellpadding="0" width="100%" >
+                <tr>
+                    <td><button id="button"><a href="Webtechproject.html" >Home</a></button></td>
+                    <td>
+                        <div class="dropdown">About
+                            <div class="dropcontent"><button id="button"><a href="About.html">The WanderLust Way</a></button><br>
+                            </div>
+                        </div>
+                    </td>
+                    <td><button id="button"><a href="Signup.html">Sign Up</a></button></td>
+                    <td><button id="button"><a href="Login.html">Login</a></button></td>
+                </tr>
+        </table>
+        <form method="POST" action="Login.php">
+            <input type="text" name="Username" placeholder="Username"><br><br>
+            <input type="password" name="password" placeholder="Password"><br><br>
+            <button class="button">Login</button>
+        </form>
+        <footer class="footer">
+                <table align="center" caption="Contact us:" style="color:whitesmoke;font-style:italic;font-size:1.5em;">
+                    <tr>
+                        <td>Email: <a href="helpdesk@wanderlust.com" style="color:whitesmoke;">helpdesk@wanderlust.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Phone: 9482154128</td>
+                    </tr>
+                </table>
+        </footer>
+    </body>
+</DOCTYPE>
