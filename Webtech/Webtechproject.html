@@ -1,0 +1,159 @@
+<DOCTYPE !html>
+    <head>
+        <title>WanderLust</title>
+        
+        <style>
+            #name{
+                font-family: fantasy;
+                font-size: 14em;
+                position: relative;
+                top:10%;
+            }
+            .table{
+                position: fixed;
+                background-color: rgba(0,0,0,0.6);
+                font-family: cursive;
+                font-size: 2em;
+                z-index: 1;
+            }
+            .dropdown{
+                position: relative;
+                text-align: center;
+                color: whitesmoke;
+                font-family: cursive;
+                font-size: 1em;
+            }
+            .dropcontent{
+                display: none;
+                position:absolute;
+                text-align: center;
+                color: whitesmoke;
+                background-color: rgba(0,0,0,0.6);
+                font-family: cursive;
+                font-size: 1em;
+                width: 100%;
+            }
+            button{
+                text-align: center;
+                color: whitesmoke;
+                background-color: transparent;
+                padding-bottom: 0px;
+                border-style: none;
+                font-family: cursive;
+                font-size: 1em;
+                width: 100%;
+            }
+            a{
+                color: whitesmoke;
+                text-decoration-line: none;
+            }
+            a:hover{
+                color: gainsboro;
+            }
+            button:hover{
+                color: gainsboro;
+            }
+            .dropdown:hover{
+                color: gainsboro;
+            }
+            .dropdown:hover .dropcontent{
+                display: block;
+                color: gainsboro;
+            }
+            #search{
+                text-align: center;
+                border:2px solid black;
+                background-color: rgba(256,256,256,0.3);
+                font-size: 2em;
+                margin:20% 0% 1% 0px;
+            }
+            #explore{
+                text-align: center;
+                border:2px solid black;
+                font-size: 2em;
+                color: white;
+                margin:1% 0px 0px 0%;
+            }
+            input:hover{
+                color: black;
+                box-shadow: 10px 10px;
+            }
+            .footer{
+                position: static;
+                background-color: rgba(0,0,0,0.7);
+                font-family: cursive;
+                font-size: 1em;
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+            }
+            .parallax{
+                background-image:url(a1.jpg);
+                background-position: center;
+                background-size:cover;
+                background-attachment:fixed;
+                height: 100%;
+            }
+            .parallax2{
+                position: relative;
+                top:0%;
+                background-image:url(home1.jpg);
+                background-position: center;
+                background-size:auto;
+                background-attachment:fixed;
+                height: 100%;
+            }
+            
+        </style>
+        
+    </head>
+    <body style="margin:0px;background-color:rgba(0,0,0,0.1)">
+        <div class="parallax">
+            <table class="table" cellspacing="0" cellpadding="0" width="100%" >
+                <tr>
+                    <td><button><a href="Webtechproject.html" >Home</a></button></td>
+                    <td>
+                        <div class="dropdown">About
+                            <div class="dropcontent"><button><a href="About.html">The WanderLust Way</a></button><br>
+                                <!--<div class="dropcontent"><button><a href="Gallery.html">Past Adventures</a></button></div>-->
+                            </div>
+                        </div>
+                    </td>
+                    <td><button><a href="Signup.html">Sign Up</a></button></td>
+                    <td><button id="Login"><a href="Login.html">Login</a></button></td>
+                </tr>
+            </table>
+            <div id="name">
+                <p align="center">
+                    WanderLust<br>
+                    <span style="font-size:0.25em; font-family:sans-serif;" align="center"><br>The Road Not Taken(Yet)</span>
+                </p>
+            </div>
+        </div>
+        <p style="text-align:center;font-size:5em;font-family:fantasy;background-color: transparent;position:relative;">
+            Travel Not To Escape Life, But For Life Not To Escape You
+        </p>
+        <div align="center" class="parallax2">
+            <form action="test.php" method="post">
+                <input name="search" id="search" size="30" type="text" placeholder="Search">
+                <input id="search" type="Submit" value="Submit">
+            </form>
+            <br>
+            <span style="font-size:2em;">OR</span><br><br>
+            <form action="IndiaMap.svg">
+                <input id="explore" type="submit" value="Explore" style="color:black;background-color:burlywood;width:20%;"><br><br><br><br>
+            </form>
+            
+            <footer class="footer">
+                <table align="center" caption="Contact us:" style="color:whitesmoke;font-style:italic;font-size:1.5em;">
+                    <tr>
+                        <td>E-mail: <a href="helpdesk@wanderlust.com" style="color:whitesmoke;">helpdesk@wanderlust.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Phone: 9482154128</td>
+                    </tr>
+                </table>
+            </footer>
+        </div>
+    </body>
+</DOCTYPE>
